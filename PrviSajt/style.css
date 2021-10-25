@@ -1,0 +1,989 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+*{
+	box-sizing: border-box;
+	margin:  0;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+.main-container{
+	width: 100%;
+	max-width:  1000px;
+	margin:  0 auto;
+}
+body{
+	background-color:  rgba(245,245,245);
+}
+.main-header{
+	display:  flex;
+	height: 50px;
+	alig-items:  center;
+}
+input[type="search"]{
+	border-radius:  10px;
+	padding:  5px;
+	border: none;
+	outline:  none;
+	width:  20vw;
+}
+a:hover{
+	text-decoration: none;
+}
+.search{
+	margin:  0 auto;
+	align-items:  center;
+	display:  flex;
+	justify-content:  flex-end;
+}
+.search-btn{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius:  10px;
+	background-color: #DC134C;
+	color: white;
+	border: none;
+	cursor:  pointer;
+	position:  absolute;
+  padding:  0;
+
+	}
+	.shopping-cart{
+	display:  flex;
+	align-items:  center;
+}
+.btn-cart{
+	border: none;
+	border-radius: 20px;
+	background-color: transparent;
+	cursor:  pointer;
+	transition:  0.5s;
+}
+.btn-cart:hover{
+	background-color: #DC134C;
+	border-radius: 20px;
+	color:  white;
+	transition:  0.5s;
+}
+header i{
+	padding: 10px;
+}
+.search i{
+	padding:  8px 8px 9px 8px;
+}
+.nasa-prodavnica{
+	width: 150px;
+	max-height:  50px;
+	
+}
+/*NAV BAR*/
+.glavni-navbar{
+	background-color: #DC134C;
+	padding: 0px;
+}
+.drp-btn{
+	background-color: crimson;
+	border: none;
+}
+.drp-btn i{
+	color: white;
+}
+.ul-navbar{
+  display: flex;
+	padding: 0;
+	text-transform: uppercase;
+	flex-direction: row;
+	margin: 0;
+}
+.navbar li{
+	list-style: none;
+}
+.nav-linker{
+	display: block;
+	padding: 1rem;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	font-size: 0.8rem;
+	
+}
+.nav-linker:hover{
+  background-color:	rgba(0,0,0,0.1);
+  color: white;
+}
+.dropdown-menuuu{
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+.a1:hover .dropdown-menuuu{
+	display: block;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(235,235,235);
+}
+.item{
+	color: black;
+	text-decoration: none;
+	padding:  0.25rem 2rem;
+	font-size: 0.7rem;
+	display:  block;
+	font-weight: bold;
+}
+.item:hover{
+	background-color: rgba(250,250,250);
+	color: black;
+}
+
+/*slike ispod nav bara*/
+
+.section-container{
+	margin-top: 0.6rem;
+}
+.image-container{
+	position: relative;
+}
+.new-collection-slides{
+	width: 100%;
+	
+}
+.text-new-collection{
+	position: absolute;
+	top: 40%;
+	right:  50%;
+	font-size: 2rem;
+	line-height: 2;
+}
+.btn-collection{
+	display: block;
+	border: none;
+	background-color: crimson;
+	cursor: pointer;
+	margin: 0 auto;
+	font-size: 1.3rem;
+	padding: 0.6rem;
+}
+.dugme-kolekcija{
+	text-decoration: none;
+	color: white;
+}
+.dugme-kolekcija:hover{
+ color: white;
+}
+.btn-collection:hover{
+	background-color: rgba(180,0,0);
+}
+
+
+
+/*sekcija najpopularnije*/
+#najpopularnije{
+	background-color: white;
+	margin-top: 0.6rem;
+}
+.grey{
+	color: rgba(235,235,235);
+}
+.najpopularnije-header{
+	border-bottom: 2px solid black;
+	text-transform: uppercase;
+	max-width: 250px;
+	margin: 0 auto;
+}
+.h2-centering{
+	text-align: center;
+}
+.slicice{
+	padding: 1.5rem 0;
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+}
+.slicica1{
+	flex: 0 0 25%;
+	max-width: 25%;
+	padding: 0 0.6rem;
+}
+ .slicica1 img{
+ 	display: block;
+	width: 100%;
+	transition: 0.5s ease-out;
+}
+.stars{
+	padding: 0.6rem;
+	display: flex;
+	justify-content: center;
+}
+.kartica-tekst{
+	text-align: center;
+	font-size: 0.8rem;
+	padding: 0.3rem;
+	margin-top: 5px;
+	font-weight: 300;
+}
+.header-kartica{
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+.kartica-href{
+	text-decoration: none;
+	color: black;
+}
+.kartica-href:hover{
+	color: black;
+}
+.kartica-p{
+	margin: 10px 0;
+}
+.cena{
+	font-size: 0.8rem;
+	font-weight: 400;
+}
+.kartica-footer{
+	text-align: center;
+	padding: 0.6rem;
+}
+.dodaj-u-korpu{
+	border: none;
+	text-transform: uppercase;
+	background-color: crimson;
+	color: white;
+	padding: 0.3rem;
+	cursor: pointer;
+}
+.dodaj-u-korpu:hover{
+	background-color: rgba(180,0,0);
+}
+.image-hover{
+	position: relative;
+	transition: 1s ease-out;
+	
+}
+.slicica-hover:hover{
+	box-shadow: 0 0 15px 2px rgba(230,230,230);
+}
+.overlay{
+	opacity: 0;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background-color: black;
+	transition: 0.5s ease-in;
+}
+.image-hover:hover .overlay{
+	opacity: 0.2;
+	height: 100%;
+}
+
+
+/*sekcija novo*/
+#novo {
+	background-color: white;
+	margin-top: 0.6rem;
+}
+
+
+/*sekcija service-description*/
+#service-description{
+	background-color: white;
+	margin-top: 0.6rem;
+	display: flex;
+	
+}
+.whole-description{
+	display: flex;
+	flex-direction: row;
+	padding: 0.8rem;
+	align-items: center;
+}
+.icon-description{
+	display: flex;
+	flex-direction: row;
+	padding: 0.6rem;
+	height: 100px;
+	align-items: center;
+}
+.text-description{
+	display: flex;
+	text-transform: uppercase;
+	flex-direction: row;
+	font-size: 0.9rem;
+}
+#service-description i{
+	color: crimson;
+	font-size: 40px;
+}
+
+/*footer*/
+
+
+footer{
+	background-color: crimson;
+	margin-top: 0.6rem;
+	padding: 2rem 0;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.brzi-linkovi{
+	flex: 0 0 33%;
+	max-width: 33%;
+	text-align: center;
+}
+.kategorijeee{
+	flex: 0 0 33%;
+	max-width: 33%;
+	text-align: center;
+}
+.informacije{
+	flex: 0 0 33%;
+	max-width: 33%;
+	text-align: center;
+}
+.icons{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.2rem;
+}
+.inline-icons{
+	color: white;
+}
+.icons-p{
+	margin-top: 1.2rem;
+}
+footer ul{
+	margin-top: 3px;
+	list-style: none;
+	color: white;
+	padding: 0;
+}
+footer li{
+	transition: 0.7s;
+	font-size: 0.9rem;
+	padding: 0.2rem 0;
+}
+footer li:hover{
+	transform: translateX(10px);
+	transition: 0.7s;
+}
+footer p{
+	color: white;
+	margin-top: 3px;
+	text-align: center;
+}
+footer h5{
+	font-size: 1.2rem;
+	color: white;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+footer a:hover{
+	color: white;
+}
+
+/*responsive*/
+@media(min-width: 990px){
+	.drp-btn{
+		display: none;
+	}
+}
+@media(max-width: 990px){
+	.main-container{
+		max-width: 720px;
+	}
+	.slicica1{
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-top: 0.6rem;
+	}
+	.galerija-item{
+		flex: 0 0 33%;
+		max-width: 33%;
+	}
+	.ul-navbar{
+		flex-direction: column;
+		max-width: 100%;
+	}
+	.a1:hover .dropdown-menuuu{
+		background-color: #DC134C;
+		box-shadow: 0px 10px 20px rgb(0 0 0 / 7%);
+	}
+	.item{
+		color: white;
+	}
+  .dropdown-menuuu{
+  	position: static;
+  	border: 1px solid #DC134C;
+  }
+}
+@media(max-width: 710px){
+	.main-container{
+		max-width: 540px;
+	}
+	#service-description{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.text-description{
+		flex: 0 0 70%;
+		max-width: 70%;
+		align-items: center;
+		justify-content: center;
+		
+	}
+	.whole-description{
+		width: 100%;
+	}
+	.icon-description{
+		flex: 0 0 25%;
+		align-items: center;
+    justify-content: center;
+	}
+	.content{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.brzi-linkovi{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.kategorijeee{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.informacije{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.kartica-p{
+		display: none;
+	}
+	input[type="search"]{
+		display: none;
+	}
+	.search-btn {
+		display: none;
+	}
+  .text-new-collection{
+  	font-size: 1rem;
+  }
+  .btn-collection{
+  	font-size: 0.6rem;
+  	padding: 0.3rem;
+  }
+  .galerija-item{
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	
+	}
+
+/*galerija-html*/
+
+.galerija-item{
+	margin-bottom: 0.6rem;
+	
+}
+.galerija-img{
+	padding: 0.3rem;
+	border: 1px solid rgba(230,230,230);
+	border-radius: 5px;
+}
+
+/*kontakt html*/
+
+#kontakt{
+	background-color: white;
+	margin-top: 0.6rem;
+}
+.kontakt-p{
+	text-align: center;
+	margin: 1.2rem;
+}
+.kontakt-wrapper{
+	display: flex;
+	max-width: 100%;
+	flex: 0 0 100%;
+}
+.licni-podaci{
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding: 1rem;
+}
+.kontakt-adresa{
+	flex: 0 0 50%;
+	max-width: 50%;
+	align-self: center;
+	padding: 0 1rem;
+}
+.kontakt-inner{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 0.6rem;
+}
+.kontakt-icon{
+	color: crimson;
+	font-size: 30px;
+	width: 2em;
+	text-align: center;
+}
+.kontakt-text{
+	font-size: 1.2rem;
+	width: 12em;
+}
+.contact-inputs{
+	width: 100%;
+	padding: 0.6rem;
+	outline: none;
+}
+textarea{
+	resize: vertical;
+}
+label{
+	display: inline-block;
+	text-align: left;
+  margin: 0.6rem 0;
+}
+
+.contact-inputs:focus{
+	border-color: crimson;
+}
+.contact-button{
+	justify-content: center;
+	background-color: crimson;
+	color: white;
+	padding: 0.5rem;
+	border: none;
+	cursor: pointer;
+	font-weight: 400;
+}
+.contact-button:hover{
+	opacity: 0.8;
+}
+.button-positioning{
+	text-align: center;
+	padding: 0.6rem;
+}
+
+@media(max-width: 710px){
+	.kontakt-wrapper{
+		flex-wrap: wrap;
+	}
+	.licni-podaci{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.kontakt-adresa{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+/*O NAMA*/
+
+#o-nama{
+	background-color: white;
+	margin-top: 0.6rem;
+}
+.onama-wrapper{
+	display: flex;
+	align-items: center;
+	margin-top: 1.2rem;
+}
+.onama-slika{
+	flex: 0 0 35%;
+	max-width: 35%;
+  padding: 0.8rem;
+  justify-content: center;
+  display: flex;
+}
+.onama-tekst{
+	padding: 0.8rem;
+	flex: 0 0 66%;
+	max-width: 66%;
+}
+.onama-description-text{
+	font-size: 1.2rem;
+	margin-bottom: 0.8rem;
+}
+.onama-naslov{
+	margin-bottom: 0.8rem;
+	color: crimson;
+}
+.img-responsive{
+	max-width: 100%;
+	height: auto;
+}
+.aligning{
+  padding-left: 1.2rem;
+}
+@media(max-width: 990px){
+	.onama-slika{
+		align-self: flex-start;
+	}
+
+}
+@media(max-width: 710px){
+  .onama-wrapper{
+  	flex-wrap: wrap;
+  	justify-content: center;
+  }
+  .onama-slika{
+  	display: flex;
+  	flex: 0 0 80%;
+  	max-width: 80%;
+  	order: 1;
+  }
+  .onama-tekst{
+  	flex: 0 0 100%;
+  	max-width: 100%;
+  	order: 2;
+  	
+  }
+}
+
+/*KATEGORIJA.HTML*/
+
+#category{
+	background-color: white;
+	margin-top: 0.6rem;
+	padding: 1rem 0 3rem 0;
+}
+.category-wrapper{
+	display: flex;
+	max-width: 100%;
+}
+.category-selection{
+	flex: 0 0 25%;
+	max-width: 25%;
+	padding: 0 1rem;
+}
+.category-products{
+	flex: 0 0 75%;
+	max-width: 75%;
+}
+.kategorije{
+	padding: 1.5rem;
+	text-align: center;
+	border: 1px solid grey;
+	margin-bottom: 0.5rem;
+}
+.kategorije ul{
+	padding: 0;
+}
+.h3-resizing{
+	font-size: 1.2em;
+}
+.kategorije li{
+	list-style-type: none;
+	text-align: left;
+	margin-bottom: 0.3rem;
+}
+.kategorije a{
+	text-decoration: none;
+	color: grey;
+}
+.kategorije a:hover{
+	text-decoration: underline;
+}
+.kategorija-velicina{
+	padding: 2rem;
+	text-align: center;
+  border: 1px solid grey;
+  margin-bottom: 0.5rem;
+}
+.btn-velicina{
+ background-color: white;
+ border: 1px solid rgba(235,235,235);
+ transition: 0.2s;
+ cursor: pointer;
+}
+.btn-velicina:hover{
+	background-color: crimson;
+	color: white;
+	transition: 0.2s;
+}
+.kategorija-novo{
+	padding: 1.2rem;
+	text-align: center;
+	border: 1px solid grey;
+	text-align: left;
+}
+.h3-centering{
+	text-align: center;
+	padding: 0.6rem;
+}
+.kategorija-novo-inner{
+	display: flex;
+}
+.kategorija-novo-slika{
+	flex: 0 0 40%;
+	max-width: 40%;
+}
+.kategorija-novo-tekst{
+	flex: 0 0 60%;
+	max-width: 60%;
+	padding: 0 0.7rem;
+}
+.span-kategorija{
+	font-size: 0.8rem;
+  font-weight: 200;
+}
+
+
+.category-select-menus{
+	display: flex;
+}
+.category-menu-by-popularity{
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+.category-menu-by-number{
+	flex: 0 0 50%;
+	max-width: 50%;
+	
+}
+.slicica1-category{
+	flex: 0 0 33%;
+	max-width: 33%;
+	padding: 0 0.6rem;
+	margin-bottom: 0.6rem;
+}
+.slicica1-category img{
+ 	display: block;
+	width: 100%;
+	transition: 0.5s ease-out;
+}
+.pages-number{
+	display: flex;
+	justify-content: flex-end;
+}
+.pages-number-inner{
+  padding: 1rem;
+}
+.btn-pages{
+	background-color: white;
+ border: 1px solid rgba(235,235,235);
+ transition: 0.2s;
+ cursor: pointer;
+ width: 30px;
+ font-size:16px;
+}
+.btn-pages:hover{
+	background-color: crimson;
+	color: white;
+	transition: 0.2s;
+}
+.btn-pages i{
+	color: black;
+}
+
+@media(max-width: 990px){
+	.slicica1-category{
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	.kategorija-novo{
+		display: none;
+	}
+}
+@media(max-width: 710px){
+	.category-wrapper{
+		flex-wrap: wrap;
+	}
+	.category-selection{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.category-products{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.category-select-menus{
+		flex-direction: column;
+		padding:  0 1rem;
+	}
+	.category-menu-by-number{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.category-menu-by-popularity{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+	@media(max-width: 540px){
+		.slicica1-category{
+      flex: 0 0 100%;
+      max-width: 100%;
+		}
+	}
+
+	/*PRODUCTS*/
+
+  #product{
+		background-color: white;
+		margin-top: 0.6rem;
+		padding: 1rem 0 3rem 0;
+	}
+	.product-wrapper{
+		display: flex;
+	}
+	.product-description{
+		flex: 0 0 75%;
+		max-width: 75%;
+		padding: 0 1rem;
+	}
+	.product-inner{
+		display: flex;
+	}
+	.product-picture{
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding: 0 0.6rem;
+	}
+  .bigest-picture{
+    padding: 0 0.25rem;
+	}
+	.donje-slike{
+		display: flex;
+	  flex-direction: row;
+	}
+	.aligning-product-images{
+		flex: 0 0 25%;
+		max-width: 25%;
+		padding: 0.25rem;
+	}
+	.aligning-product-images img{
+		padding: 0;
+		border: 1px solid rgba(235,235,235);
+		display: block;
+	}
+	.aligning-product-images img:hover{
+    border-color: crimson;
+	}
+	.product-service{
+		flex: 0 0 25%;
+		max-width: 25%;
+		padding: 0 1rem;
+	}
+	.opis-producta{
+		padding: 0 1rem;
+	}
+	.product-h1-size{
+		font-size: 2.5rem;
+		font-weight: 300;
+	}
+	.product-text-weight{
+		font-weight: 200;
+	}
+	.product-cena{
+		margin-top: 1rem;
+		font-size: 1.3rem;
+	}
+	.product-hr{
+		background-color: rgba(235,235,235);
+		margin: 1rem 0;
+	}
+	.product-input{
+		flex: 0 0 20%;
+		max-width: 20%;
+		padding: 0.3rem;
+		outline: none;
+	}
+	.product-button{
+		margin-left: 0.6rem;
+		padding: 0.43rem;
+	}
+	.product-input:focus{
+		border-color: crimson;
+	}
+	.tabela-wrapper{
+		dispalay: flex;
+		padding: 0 0.6rem;
+		margin-top: 0.6rem;
+	}
+	.tabela-inner{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.velicine{
+		padding: 0.3rem;
+		font-size: 1.5rem;
+	}
+	table{
+  border-top: 1px solid #ccc;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+
+	}
+	tr, th{
+		border: 1px solid #ccc;
+		border-right: 0px;
+		border-left: 0px;
+		text-align: left;
+		font-weight: 300;
+	}
+	th{
+		padding: 0.6rem;
+	}
+	tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+thead{
+	background-color: white;
+}
+.reseting-padding{
+	padding: 0;
+}
+.product-service i{
+	font-size: 30px;
+	color: crimson;
+}
+.product-sidebar-text{
+	font-size: 0.7em;
+}
+.product-icon{
+	padding: 0;
+	flex: 0 0 20%;
+	max-width: 20%;
+}
+.aligning-icon{
+	justify-content: center;
+}
+.slika-zalihe{
+	margin-top: 1rem;
+}
+.product-novo{
+	border: 0;
+}
+.product-novo{
+	padding: 0;
+}
+.product-novo-text{
+	align-items: center;
+}
+@media(max-width: 990px){
+	.product-service{
+		display: none;
+	}
+	.product-description{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+@media(max-width: 720px){
+ .product-inner{
+ 	flex-wrap: wrap;
+ }
+ .product-picture{
+ 	flex: 0 0 100%;
+ 	max-width: 100%;
+ }
+}

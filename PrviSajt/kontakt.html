@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kontakt</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+<body>
+<div class="main-container">
+	<header class="main-header">
+		<!--header logo-->
+		<div class="img-shop">
+		  <img class="nasa-prodavnica" src="https://nemanja997.github.io/images/logoNasaProd.svg" alt="nasa prodavnica logo"/>
+	  </div>
+	  <!--Searh bar-->
+		<div class="search">
+		   <input class="search-bar" type="search" placeholder="Pretraga...">
+		      <button class="search-btn">
+		         <i class="fas fa-search"></i>
+	        </button>
+	  </div>
+	    <!--Shopping cart-->
+	    <div class="shopping-cart">
+	      <button class="btn">	
+	        <i class="fas fa-shopping-cart">
+	    	    <span>Korpa</span>
+	        </i>
+	      </button>
+	    </div> 	
+	</header>
+
+	<!--Nav bar-->
+	<nav class="glavni-navbar navbar navbar-expand-lg">
+		<button class="drp-btn" data-toggle="collapse" data-target="#nav-dropdown"><i class="fas fa-caret-down"></i></button>
+		<div class="dropdown-nav collapse navbar-collapse" id="nav-dropdown">
+      <ul class="ul-navbar">
+			<li class="a1"><a class="nav-linker first-navlink dropdown-toggle" href="kategorije.html">kategorije</a>
+        <div class="dropdown-menuuu" id="drp-menu">
+        	<a href="kategorije.html" class="item">patike</a>
+        	<a href="kategorije.html" class="item">dukserice</a>
+        	<a href="kategorije.html" class="item">simike</a>
+        	<a href="kategorije.html" class="item">dzemperi</a>
+        </div>
+      </li>
+			<li><a class="nav-linker" href="pocetna.html">pocetna</a></li>
+			<li><a class="nav-linker" href="galerija.html">galerija</a></li>
+			<li><a class="nav-linker" href="kontakt.html">kontakt</a></li>
+			<li><a class="nav-linker" href="onama.html">o nama</a></li>
+		</ul>	
+		 </div>	
+	</nav>
+	
+  <section id="kontakt">
+  	<div class="h2-centering">
+    <h2 class="najpopularnije-header">Kontakt</h2>
+    </div>
+      <p class="kontakt-p">Pošaljite nam bilo kakvo pitanje,sugestiju ili zamerku. Potrudićemo se da odgovorimo u najbržem mogućem roku.</p>
+        <div class="kontakt-wrapper">
+        	<div class="licni-podaci">
+        		<form action="">
+        		<label for="Ime">Ime*</label>
+        		<input type="text" placeholder="Unesite vase ime*" name="Ime" class="contact-inputs" id="Ime" required>
+        		<label for="Prezime">Prezime*</label>
+        		<input type="text" placeholder="Unesite vase prezime*" name="Prezime" class="contact-inputs" id="Prezime" required>
+        		<label for="Email">Email*</label>
+        		<input type="email" placeholder="Unesite vas e-mail" name="Email" id="Email" class="contact-inputs" required>
+        		<label for="Telefon">Telefon*</label>
+        		<input type="tel" placeholder="Unesite vas telefon*" name="Telefon" id="Telefon" class="contact-inputs" required>
+        		<label>Poruka*</label>
+        		<textarea class="contact-inputs" placeholder="Unesite zeljenu poruku*"></textarea>
+        		<div class="button-positioning">
+        		<input type="submit" class="contact-button" value="Posalji">
+        	  </div>
+        	  </form>
+        	</div>
+        	<div class="kontakt-adresa">
+        		<div class="kontakt-inner">
+        		<div class="kontakt-icon">
+        			<i class="fas fa-map-marker-alt"></i>
+        		</div>
+        		<div class="kontakt-text">
+        			<p>Vojvode Stepe</p>
+        		</div>	
+        	</div>
+        	<div class="kontakt-inner">
+        		<div class="kontakt-icon">
+        			<i class="fas fa-envelope"></i>
+        		</div>
+        		<div class="kontakt-text">
+        			<p>lukinaprod@gmail.com</p>
+        		</div>	
+        	</div>
+        	<div class="kontakt-inner">
+        		<div class="kontakt-icon">
+        			<i class="fas fa-phone"></i>
+        		</div>
+        		<div class="kontakt-text">
+        			<p>+381 555-333</p>
+        		</div>	
+        	</div>
+        	</div>	
+  </section>
+	<!--footer-->
+	<footer>
+		<div class="content">
+			<div class="brzi-linkovi">
+				<h5>Brzi Linkovi</h5>
+				 <ul>
+				 	<li><a href="pocetna.html"><i class="fas fa-angle-double-right"></i>Pocetna</a></li>
+				 	<li><a href="kategorija.html"><i class="fas fa-angle-double-right"></i>Kategorije</a></li>
+				 	<li><a href="galerija.html"><i class="fas fa-angle-double-right"></i>Galerija</a></li>
+				 	<li><a href="onama.html"><i class="fas fa-angle-double-right"></i>O Nama</a></li>
+          <li><a href="kontakt.html"><i class="fas fa-angle-double-right"></i>Kontakt</a></li>
+         </ul> 
+			</div>
+			<div class="kategorijeee">
+				<h5>Kategorije</h5>
+				 <ul>
+				 	<li><a href="kategorija.html"><i class="fas fa-angle-double-right"></i>Patike</a></li>
+				 	<li><a href="kategorija.html"><i class="fas fa-angle-double-right"></i>Cipele</a></li>
+				 	<li><a href="kategorija.html"><i class="fas fa-angle-double-right"></i>Dukserice</a></li>
+				 	<li><a href="kategorija.html"><i class="fas fa-angle-double-right"></i>Dzemperi</a></li>
+			</div>
+			<div class="informacije">
+				<h5>Informacije o posiljci</h5>
+				  <p>Za naručene artikle pre 13h roba će biti poslata isti dan.</p>
+				  <p>Za naručene artikle posle 13h roba će biti poslata dan posle.</p>
+				  <p>Plaćanje se vrši iskljucivo pouzećem.</p>
+			</div>	
+		</div>
+		<div class="icons">
+			<div class="inline-icons">
+			<a href="#"><i class="fab fa-facebook-square"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fas fa-envelope"></i></a>
+		  </div>
+			<p class="icons-p"><i>&copy;Sva prava zadrzana. Luka Kazic</i></p>
+		</div>	
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</div>	
+</body>
+</html>

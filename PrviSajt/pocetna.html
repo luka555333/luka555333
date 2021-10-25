@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pocetna</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+<body>
+<div class="main-container">
+	<header class="main-header">
+		<!--header logo-->
+		<div class="img-shop">
+		  <img class="nasa-prodavnica" src="https://nemanja997.github.io/images/logoNasaProd.svg" alt="nasa prodavnica logo"/>
+	  </div>
+	  <!--Searh bar-->
+		<div class="search">
+		   <input class="search-bar" type="search" placeholder="Pretraga...">
+		      <button class="search-btn">
+		         <i class="fas fa-search"></i>
+	        </button>
+	  </div>
+	    <!--Shopping cart-->
+	    <div class="shopping-cart">
+	      <button class="btn-cart">	
+	        <i class="fas fa-shopping-cart">
+	    	    <span>Korpa</span>
+	        </i>
+	      </button>
+	    </div> 	
+	</header>
+
+	<!--Nav bar-->
+	<nav class="glavni-navbar navbar navbar-expand-lg">
+		<button class="drp-btn" data-toggle="collapse" data-target="#nav-dropdown"><i class="fas fa-caret-down"></i></button>
+		<div class="dropdown-nav collapse navbar-collapse" id="nav-dropdown">
+      <ul class="ul-navbar">
+			<li class="a1"><a class="nav-linker first-navlink dropdown-toggle" href="kategorije.html">kategorije</a>
+        <div class="dropdown-menuuu" id="drp-menu">
+        	<a href="kategorije.html" class="item">patike</a>
+        	<a href="kategorije.html" class="item">dukserice</a>
+        	<a href="kategorije.html" class="item">simike</a>
+        	<a href="kategorije.html" class="item">dzemperi</a>
+        </div>
+      </li>
+			<li><a class="nav-linker" href="pocetna.html">pocetna</a></li>
+			<li><a class="nav-linker" href="galerija.html">galerija</a></li>
+			<li><a class="nav-linker" href="kontakt.html">kontakt</a></li>
+			<li><a class="nav-linker" href="onama.html">o nama</a></li>
+		</ul>	
+		 </div>	
+	</nav>
+	<!--Slike Nova Kolekcija-->
+	<div class="section-container">
+		<div class="image-container">
+		  <img src="https://nemanja997.github.io/images/slajd1.jpg" alt="nova kolekcija prva" class="new-collection-slides">	
+		    <div class="text-new-collection">
+		    	Nova Kolekcija
+		    	<button class="btn-collection"><a href="kategorije.html" class="dugme-kolekcija">Pogledaj</a></button>
+		    </div>
+		</div> 	
+	</div>
+
+	<!-- najpopulrnije-->
+	<section id="najpopularnije">
+		<div class="h2-centering">
+		<h2 class="najpopularnije-header">Najpopularnije</h2>
+	  </div>
+	    <div class="slicice">
+		    <div class="slicica1">
+		    	<div class="slicica-hover">
+		    		<a href="product1.html" class="kartica-href">
+		    		  <div class="image-hover">
+		    			  <img src="https://nemanja997.github.io/images/products/p1.jpg" alt="prva slicica">
+                  <div class="overlay">
+		    	        </div>
+		    	    </div>
+		    	  </a>
+		    	  <!--zvezdice-->
+		    	  <div class="stars">
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	  </div>
+		    	  <div class="kartica-tekst">
+		    	  	<a href="product1.html" class="kartica-href">
+		    	  	<h5 class="header-kartica">Patike bele</h5>
+		    	  </a>
+		    	  	<p class="kartica-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		    	  	<span class="cena">21999.99 din.</span>
+		    	  </div>
+		    	  <div class="kartica-footer">
+		    	  	<button class="dodaj-u-korpu">dodaj u korpu</button>
+		    	  </div>
+		    	  </div>	
+		    </div>
+		    <div class="slicica1">
+		    	<div class="slicica-hover">
+		    	<a href="product2.html" class="kartica-href">
+		    		<div class="image-hover">
+		    	     <img src="https://nemanja997.github.io/images/products/p2.jpg" alt="druga slicica">
+		    	       <div class="overlay">
+		    	       </div>
+		    	  </div>
+		    	</a> 	
+		    	<div class="stars">
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	  </div>
+		    	  <div class="kartica-tekst">
+		    	  	<a href="product2.html" class="kartica-href">
+		    	  	<h5 class="header-kartica">Duks sivi</h5>
+		    	  </a>
+		    	  	<p class="kartica-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		    	  	<span class="cena">499.99 din.</span>
+		    	  </div>
+		    	  <div class="kartica-footer">
+		    	  	<button class="dodaj-u-korpu">dodaj u korpu</button>
+		    	   </div>
+		    	  </div>	
+		    	</div>	
+		    <div class="slicica1">
+		    	<div class="slicica-hover">
+		    	 <a href="product3.html">	
+		    		<div class="image-hover">
+             <img src="https://nemanja997.github.io/images/products/p3.jpg" alt="treca slicica">
+		    	       <div class="overlay">
+		    	       </div>
+		    	  </div>
+		    	 </a> 
+		    	<div class="stars">
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	  </div>
+		    	  <div class="kartica-tekst">
+		    	  	<a href="product3.html" class="kartica-href">
+		    	  	<h5 class="header-kartica">Simike</h5>
+		    	  </a>
+		    	  	<p class="kartica-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		    	  	<span class="cena">29999.99 din.</span>
+		    	  </div>
+		    	  <div class="kartica-footer">
+		    	  	<button class="dodaj-u-korpu">dodaj u korpu</button>
+		    	  </div>
+		    	 </div> 	
+		    </div>	
+		    <div class="slicica1">
+		    	<div class="slicica-hover">
+		    	<a href="product4.html" class="kartica-href">
+            <div class="image-hover">
+		    	     <img src="https://nemanja997.github.io/images/products/p4.jpg" alt="cetvrta slicica">
+		    	       <div class="overlay">
+		    	       </div>
+		    	  </div>
+		    	</a>    
+		    	<div class="stars">
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	  </div>
+		    	  <div class="kartica-tekst">
+		    	  	<a href="product4.html" class="kartica-href">
+		    	  	<h5 class="header-kartica">Emo patike</h5>
+		    	  </a>
+		    	  	<p class="kartica-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		    	  	<span class="cena">10.99 din.</span>
+		    	  </div>
+		    	  <div class="kartica-footer">
+		    	  	<button class="dodaj-u-korpu">dodaj u korpu</button>
+		    	  </div>
+		    	 </div> 	
+		    </div>		
+	    </div>	
+	</section>
+
+	<!--novo-->
+	<section id="novo">
+		<div class="h2-centering">
+		<h2 class="najpopularnije-header">Novo</h2>
+	  </div>
+	    <div class="slicice">
+		    <div class="slicica1">
+		    	<div class="slicica-hover">
+		    		<a href="product5.html" class="kartica-href">
+		    		  <div class="image-hover">
+		    			  <img src="https://nemanja997.github.io/images/products/p5.jpg" alt="prva slicica">
+                  <div class="overlay">
+		    	        </div>
+		    	    </div>
+		    	  </a>
+
+		    	  <!--zvezdice-->
+		    	  <div class="stars">
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	  </div>
+		    	  <div class="kartica-tekst">
+		    	  	<a href="product5.html" class="kartica-href">
+		    	  	<h5 class="header-kartica">Replay simike</h5>
+		    	  </a>
+		    	  	<p class="kartica-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		    	  	<span class="cena">14999.99 din.</span>
+		    	  </div>
+		    	  <div class="kartica-footer">
+		    	  	<button class="dodaj-u-korpu">dodaj u korpu</button>
+		    	  </div>
+		    	  </div>	
+		    </div>
+		    <div class="slicica1">
+		    	<div class="slicica-hover">
+		    	<a href="product6.html" class="kartica-href">
+		    		<div class="image-hover">
+		    	     <img src="https://nemanja997.github.io/images/products/p6.jpg" alt="druga slicica">
+		    	       <div class="overlay">
+		    	       </div>
+		    	  </div>
+		    	</a> 	
+		    	<div class="stars">
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	  </div>
+		    	  <div class="kartica-tekst">
+		    	  	<a href="product6.html" class="kartica-href">
+		    	  	<h5 class="header-kartica">Solidan dzemper</h5>
+		    	  </a>
+		    	  	<p class="kartica-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		    	  	<span class="cena">5999.99 din.</span>
+		    	  </div>
+		    	  <div class="kartica-footer">
+		    	  	<button class="dodaj-u-korpu">dodaj u korpu</button>
+		    	   </div>
+		    	  </div>	
+		    	</div>	
+		    <div class="slicica1">
+		    	<div class="slicica-hover">
+		    	 <a href="product7.html">	
+		    		<div class="image-hover">
+             <img src="https://nemanja997.github.io/images/products/p7.jpg" alt="treca slicica">
+		    	       <div class="overlay">
+		    	       </div>
+		    	  </div>
+		    	 </a> 
+		    	<div class="stars">
+		    	    <i class="fas fa-star grey"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	    <i class="fas fa-star grey"></i>
+		    	  </div>
+		    	  <div class="kartica-tekst">
+		    	  	<a href="product7.html" class="kartica-href">
+		    	  	<h5 class="header-kartica">Najgori dzemper</h5>
+		    	  </a>
+		    	  	<p class="kartica-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		    	  	<span class="cena">999.99 din.</span>
+		    	  </div>
+		    	  <div class="kartica-footer">
+		    	  	<button class="dodaj-u-korpu">dodaj u korpu</button>
+		    	  </div>
+		    	 </div> 	
+		    </div>	
+		    <div class="slicica1">
+		    	<div class="slicica-hover">
+		    	<a href="product8.html" class="kartica-href">
+            <div class="image-hover">
+		    	     <img src="https://nemanja997.github.io/images/products/p8.jpg" alt="cetvrta slicica">
+		    	       <div class="overlay">
+		    	       </div>
+		    	  </div>
+		    	</a>    
+		    	<div class="stars">
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	    <i class="fas fa-star"></i>
+		    	  </div>
+		    	  <div class="kartica-tekst">
+		    	  	<a href="product8.html" class="kartica-href">
+		    	  	<h5 class="header-kartica">Savrsen dzemper</h5>
+		    	  </a>
+		    	  	<p class="kartica-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		    	  	<span class="cena">9999.99 din.</span>
+		    	  </div>
+		    	  <div class="kartica-footer">
+		    	  	<button class="dodaj-u-korpu">dodaj u korpu</button>
+		    	  </div>
+		    	 </div> 	
+		    </div>		
+	    </div>		
+	</section>
+
+	<!--opis usluge-->	
+	<section id="service-description">
+		<div class="whole-description">
+			<div class = "icon-description">
+				<i class="fas fa-truck"></i>
+			</div>
+				<div class="text-description">
+					<p>isporuka u roku od 30 dana najbrzom kurirskom sluzbom!</p>
+				</div>
+	  </div>
+	   <div class="whole-description">
+			<div class = "icon-description">
+				<i class="fas fa-lock"></i>
+			</div>
+				<div class="text-description">
+					<p>prilikom online kupovine vasi podaci su potpuno zasticeni!</p>
+				</div>
+	  </div>
+	   <div class="whole-description">
+			<div class = "icon-description">
+				<i class="fas fa-cart-plus"></i>
+			</div>
+				<div class="text-description">
+					<p>mogucnost kupovine 24h u nasoj prodavnici!</p>
+				</div>
+	  </div>
+	</section>
+
+	<!--footer-->
+	<footer>
+		<div class="content">
+			<div class="brzi-linkovi">
+				<h5>Brzi Linkovi</h5>
+				 <ul>
+				 	<li><a href="pocetna.html"><i class="fas fa-angle-double-right"></i>Pocetna</a></li>
+				 	<li><a href="kategorije.html"><i class="fas fa-angle-double-right"></i>Kategorije</a></li>
+				 	<li><a href="galerija.html"><i class="fas fa-angle-double-right"></i>Galerija</a></li>
+				 	<li><a href="onama.html"><i class="fas fa-angle-double-right"></i>O Nama</a></li>
+          <li><a href="kontakt.html"><i class="fas fa-angle-double-right"></i>Kontakt</a></li>
+         </ul> 
+			</div>
+			<div class="kategorijeee">
+				<h5>Kategorije</h5>
+				 <ul>
+				 	<li><a href="kategorija.html"><i class="fas fa-angle-double-right"></i>Patike</a></li>
+				 	<li><a href="kategorija.html"><i class="fas fa-angle-double-right"></i>Cipele</a></li>
+				 	<li><a href="kategorija.html"><i class="fas fa-angle-double-right"></i>Dukserice</a></li>
+				 	<li><a href="kategorija.html"><i class="fas fa-angle-double-right"></i>Dzemperi</a></li>
+				 </ul>
+			</div>
+			<div class="informacije">
+				<h5>Informacije o posiljci</h5>
+				  <p>Za naručene artikle pre 13h roba će biti poslata isti dan.</p>
+				  <p>Za naručene artikle posle 13h roba će biti poslata dan posle.</p>
+				  <p>Plaćanje se vrši iskljucivo pouzećem.</p>
+			</div>
+		</div>
+		<div class="icons">
+			<div class="inline-icons">
+			<a href="#"><i class="fab fa-facebook-square"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fas fa-envelope"></i></a>
+		  </div>
+			<p class="icons-p"><i>&copy;Sva prava zadrzana. Luka Kazic</i></p>
+		</div>
+		
+	</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
